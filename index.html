@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="Stylesheet" href="Styles/General.css">
+  <link rel="Stylesheet" href="Styles/Header.css">
+  <link rel="Stylesheet" href="Styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div>
+      <p class="logo"><span class="logoPart">DEV</span>esh's Portfolio.</p>
+    </div>
+    <div>
+      <ul class="headerOptions" id="js-sidenav">
+        <li>About</li>
+        <li>Skills</li>
+        <li>Experience</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="hamburger js-hamburger">
+      <img src="Images/Hamburger-Menu .svg" alt="" class="menu">
+    </div>
+  </header>
+  <main>
+    <section class="about">
+      <div class="About-Me">
+        <p>Hi, My name is <span class="Name-Part">Devesh</span></p>
+        <p>and I am a passionate</p> 
+        <span id="element"></span>
+        <div class="About-Summary">Together we can create seamless and engaging user experiences, pushing the boundaries of innovation and ensuring our applications not only meet but exceed user expectations.</div>
+        <button class="About-Buttons">Download Resume</button>
+        <button class="About-Buttons">Visit Github</button>
+      </div>
+      <div class="Profile-photo">
+        <img src="Images/Photo.png">
+      </div>
+    </section>
+
+    <hr class="Divide-Section">
+
+    <section class="skills">
+      <div class="skill-heading">Skills</div>
+      <div class="skill-image-container">
+        <img src="Images/Skills tree.svg">
+      </div>
+    </section>
+
+    <hr class="Divide-Section">
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['UI / UX Designer.', 'Performance Tester.', 'Hiking Enthusiast.', 'Web Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
+  <script src="Scripts/header.js"></script>
+</body>
+</html>
