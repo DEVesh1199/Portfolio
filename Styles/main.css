@@ -1,14 +1,15 @@
 
 .about {
   display: flex;
+  flex-direction: column;
   color: white;
-  margin-top: 10%;
+  margin-top: 8rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.About-Me {
-  flex: 1.5;
-  font-size: 42px;
-  margin-left: 6%;
+.about p {
+  font-size: 48px;
 }
 
 .Name-Part {
@@ -22,27 +23,15 @@
 }
 
 .About-Summary {
-  width: 70%;
+  width: 40rem;
   font-size: 12px;
   margin-top: 15px;
   border-left: 3px solid rgb(167, 199, 231);
   padding-left: 8px;
 }
 
-.Profile-photo {
-  flex: 0.4;
-  margin-right: 25%;
-  margin-top: 1%;
-}
-
-.Profile-photo img {
-  width: 100%;
-  padding: 2px;
-  border: 8px rgb(167, 199, 231) solid;
-}
-
 .About-Buttons {
-  margin-top: 42px;
+  margin: 42px 10px;
   background-color: rgb(167, 199, 231);
   color: rgb(15, 15, 15);
   border: none;
@@ -54,6 +43,7 @@
 
 .About-Buttons:hover {
   cursor: pointer;
+  background-color: #009fc2;
 }
 
 .About-Buttons:active {
@@ -68,10 +58,11 @@
 
 .skillHeader {
   color: rgb(167, 199, 231);
-  font-family: 'Protest Revolution', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 44px;
   text-align: center;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 section {
@@ -80,10 +71,11 @@ section {
 }
 
 .card {
-  width: 300px;
-  height: 500px;
+  width: 32rem;
+  height: 300px;
   perspective: 1000px;
   cursor: pointer;
+  margin: 0px 10px;
 }
 
 .card-inner {
@@ -112,12 +104,16 @@ section {
 }
 
 .front-face {
-  background-color: rgb(167, 199, 231);
+  /* background-color: rgb(115, 194, 214); */
+
+  background: rgba(66, 179, 214, 1.0);
+  background: linear-gradient(135deg, rgb(122, 199, 223), rgba(190, 174, 242, 1.0));
+
   color: rgb(12, 26, 43);
   font-size: 44px;
   font-family: 'Protest Revolution', sans-serif;
   text-align: center;
-  box-shadow: 0px 1px 18px rgb(186, 239, 255);
+  box-shadow: 0px 0px 10px rgb(186, 239, 255);
 }
 
 .back-face {
@@ -145,4 +141,95 @@ section {
   color: rgb(12, 12, 12);
   margin-bottom: 14px;
   text-align: center;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+    max-width: 72rem;
+    /* margin-left: 7rem; */
+    position: relative;
+}
+
+.timeline-item {
+    border-left: 2px solid #3498db;
+    margin: 50px 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    border-right-color: #3498db;
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-content {
+    background-color: rgb(186, 239, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.timeline-title {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+.timeline-description {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.4;
+}
+
+.funky-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  /* background-color: #4CAF50; */
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.funky-element {
+  width: 100px;
+  height: 100px;
+  /* border-radius: 50%; */
+  background: rgba(66, 179, 214, 1.0);
+  background: linear-gradient(135deg, rgb(122, 199, 223), rgba(190, 174, 242, 1.0));
+  margin: 0 20px;
+  animation: bounce 2s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
 }
