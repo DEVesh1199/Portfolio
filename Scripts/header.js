@@ -9,3 +9,8 @@ document.querySelector('.js-hamburger').addEventListener('click', ()=>{
   }
   
 });
+
+function flipCard(card) {
+  card.classList.toggle('flipped');
+}
+

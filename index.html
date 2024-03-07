@@ -39,8 +39,12 @@
         <p>and I am a passionate</p> 
         <span id="element"></span>
         <div class="About-Summary">Together we can create seamless and engaging user experiences, pushing the boundaries of innovation and ensuring our applications not only meet but exceed user expectations.</div>
-        <button class="About-Buttons">Download Resume</button>
-        <button class="About-Buttons">Visit Github</button>
+        <a href="https://drive.google.com/file/d/16xfsKHd5B9zVQG-aXLvDkcBI-13Qm1q1/view?usp=drive_link" target="_blank">
+          <button class="About-Buttons">Download Resume</button>
+        </a>
+        <a href="https://github.com/DEVesh1199" target="_blank">
+          <button class="About-Buttons">Visit Github</button>
+        </a>
       </div>
       <div class="Profile-photo">
         <img src="Images/Photo.png">
@@ -49,15 +53,48 @@
 
     <hr class="Divide-Section">
 
+    <p class="skillHeader">Skills</p>
     <section class="skills">
-      <div class="skill-heading">Skills</div>
-      <div class="skill-image-container">
-        <img src="Images/Skills tree.svg">
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-face front-face">
+            Frontend Developer
+          </div>
+          <div class="card-face back-face">
+            <div class="skillDetail">
+              <p class="skillName">Languages</p>
+              <p class="skillList">HTML, CSS, JavaScript</p>
+              <p class="skillName">Frameworks/Libraries</p>
+              <p class="skillList">React.js, Redux</p>
+              <p class="skillName">Design Tools</p>
+              <p class="skillList">Figma, Adobe XD</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-face front-face">
+            Performance Testing
+          </div>
+          <div class="card-face back-face">
+            <div class="skillDetail">
+              <p class="skillName">Environments</p>
+              <p class="skillList">GCP, Openshift, Fusion</p>
+              <p class="skillName">Tools</p>
+              <p class="skillList">LoadRunner, Postman, VUGen, Dynatrace, Splunk</p>
+              <p class="skillName">Test type</p>
+              <p class="skillList">Load, Soak, Endurance</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <hr class="Divide-Section">
   </main>
+  <div class="visme_d" data-title="Portfolio form" data-url="q6p33vne-portfolio-form" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="40940"></div>
+  <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
